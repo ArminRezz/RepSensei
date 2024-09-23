@@ -56,7 +56,7 @@ class PushUpCounter:
             # Visualize the calculated angle on the frame
             cv2.putText(image, str(int(angle)),
                         tuple(np.multiply(elbow, [image.shape[1], image.shape[0]]).astype(int)),
-                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1, cv2.LINE_AA)  # Adjusted font scale and thickness
 
             # Push-up counter logic based on elbow angle
             if angle > 160:  # If elbow is straight
@@ -67,19 +67,19 @@ class PushUpCounter:
                 print(f"Push-ups: {self.counter}")  # Print current count
 
             # Render push-up counter on the frame
-            cv2.rectangle(image, (0, 0), (225, 73), (245, 117, 16), -1)  # Draw background rectangle
-            cv2.putText(image, 'Push-ups', (15, 12),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+            cv2.rectangle(image, (0, 0), (150, 50), (245, 117, 16), -1)  # Draw background rectangle
+            cv2.putText(image, '', (15, 12),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0, 0, 0), 1, cv2.LINE_AA)  # Adjusted font scale
             cv2.putText(image, str(self.counter),
-                        (10, 60),
-                        cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2, cv2.LINE_AA)
+                        (20, 30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 1, cv2.LINE_AA)  # Adjusted font scale and thickness
 
             # Render current stage on the frame
-            cv2.putText(image, 'Stage', (65, 12),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+            cv2.putText(image, '', (10, 30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0, 0, 0), 1, cv2.LINE_AA)  # Adjusted font scale
             cv2.putText(image, self.stage,
-                        (60, 60),
-                        cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2, cv2.LINE_AA)
+                        (60, 30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 1, cv2.LINE_AA)  # Adjusted font scale and thickness
 
         except Exception as e:
             print(f"Error processing frame: {e}")  # Print error if frame processing fails
@@ -157,4 +157,3 @@ if __name__ == "__main__":
     main()  # Run the main function
 
     # test
-    
