@@ -18,8 +18,7 @@ This project uses OpenCV and MediaPipe to count push-ups from a video file. It p
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/push-up-counter.git
-    cd push-up-counter
+    git clone https://github.com/ArminRezz/RepSensei.git
     ```
 
 2. Install the required packages:
