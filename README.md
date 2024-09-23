@@ -1,8 +1,8 @@
-#  RepSensei 🥋 💪 🏋️
+#  RepSensei 🥋 
 
 This project uses OpenCV and MediaPipe to count push-ups from a video file. It processes video frames to detect pose landmarks and calculates the angle at the elbow to determine the push-up count.
 
-## Features
+## Features 🏋️
 
 - Detects push-ups using pose landmarks.
 - Counts push-ups based on elbow angle.
@@ -14,7 +14,7 @@ This project uses OpenCV and MediaPipe to count push-ups from a video file. It p
 - MediaPipe
 - NumPy
 
-## Installation
+## Installation 💪 
 
 1. Clone the repository:
     ```sh
