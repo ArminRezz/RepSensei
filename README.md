@@ -35,9 +35,3 @@ This project uses OpenCV and MediaPipe to count push-ups from a video file. It p
     ```sh
     python sensei.py -d /path/to/your/video/directory
     ```
-
-3. Select a video from the list of available videos.
-
-4. The script will process the video and display the push-up count and current stage on the video frames.
-
-## Example
