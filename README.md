@@ -10,7 +10,6 @@ This project uses OpenCV and MediaPipe to count push-ups from a video file. It p
 
 ## Requirements
 
-- Python 3.x
 - OpenCV
 - MediaPipe
 - NumPy
